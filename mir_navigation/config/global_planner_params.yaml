@@ -27,8 +27,11 @@ SBPLLatticePlanner:
   allocated_time: 3.0   #The amount of time given to the planner to find a solution. 
   initial_epsilon: 8.0  #The larger this value is the faster the search tends to find a solution
   forward_search: false
-  nominalvel_mpersecs: 0.4 
-  timetoturn45degsinplace_secs: 0.3 # = 0.6 rad/s #Radius for Rotation
+  # nominalvel_mpersecs: 0.4 
+  # timetoturn45degsinplace_secs: 0.3 # = 0.6 rad/s #Radius for Rotation
+
+  nominalvel_mpersecs: 0.8   #for formation control
+  timetoturn45degsinplace_secs: 39.27
 
 
 NavfnROS:

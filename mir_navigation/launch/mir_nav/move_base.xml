@@ -4,7 +4,8 @@
     <arg name="prefix" default="" doc="Prefix used for robot tf frames" /> <!-- used in the config files -->
 
     <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen" clear_params="true">
-        <param name="SBPLLatticePlanner/primitive_filename" value="$(find mir_navigation)/mprim/unicycle_highcost_5cm.mprim" />
+        <param name="SBPLLatticePlanner/primitive_filename" value="$(find mir_navigation)/mprim/unicycle_5cm.mprim" />!  <!--for formation control -->
+         <!-- <param name="SBPLLatticePlanner/primitive_filename" value="$(find mir_navigation)/mprim/unicycle_highcost_5cm.mprim" /> -->
         <rosparam file="$(find mir_navigation)/config/move_base_common_params.yaml" command="load" />
         <rosparam file="$(find mir_navigation)/config/global_planner_params.yaml" command="load" />
         <rosparam file="$(find mir_navigation)/config/$(arg local_planner)_local_planner_params.yaml" command="load" />
