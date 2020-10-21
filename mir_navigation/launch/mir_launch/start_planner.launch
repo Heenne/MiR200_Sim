@@ -6,7 +6,11 @@
     <arg name="map_file" value="$(arg map_file)" />
   </include>
 
-  <include file="$(find mir_navigation)/launch/mir_nav/move_base.xml">
+  <!-- Usage of old move_base package -->
+  <!-- <include file="$(find mir_navigation)/launch/mir_nav/move_base.xml">
     <arg name="local_planner" value="$(arg local_planner)"/>
+  </include> -->
+
+  <include file="$(find mir_navigation)/launch/mir_nav/move_base_flex.launch">
   </include>
 </launch>
