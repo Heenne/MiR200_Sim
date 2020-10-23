@@ -7,8 +7,8 @@
     <param name="planner_max_retries" value="3"/>
     <param name="SBPLLatticePlanner/primitive_filename" value="$(find mir_navigation)/mprim/unicycle_highcost_5cm.mprim" />
     <rosparam file="$(find mir_navigation)/config/move_base_flex_common_params.yaml" command="load"/>
-    <rosparam file="$(find mir_navigation)/config/planners.yaml" command="load" />
-    <rosparam file="$(find mir_navigation)/config/controllers.yaml" command="load" />
+    <rosparam file="$(find mir_navigation)/config/global_planner_params.yaml" command="load" />
+    <rosparam file="$(find mir_navigation)/config/local_planner_params.yaml" command="load" />
     <rosparam file="$(find mir_navigation)/config/recovery_behaviors.yaml" command="load" />
     <rosparam file="$(find mir_navigation)/config/costmap_common_params.yaml" command="load" ns="global_costmap"/>
     <rosparam file="$(find mir_navigation)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
