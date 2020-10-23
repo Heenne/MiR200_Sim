@@ -1,5 +1,4 @@
 <launch>
-
   <arg name="prefix" default="" doc="Prefix used for robot tf frames" /> <!-- used in the config files -->
 
   <!-- Move Base Flex -->
@@ -15,5 +14,7 @@
     <rosparam file="$(find mir_navigation)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find mir_navigation)/config/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find mir_navigation)/config/local_costmap_params.yaml" command="load" />
+
+    <remap from="odom" to="odom_comb" />
   </node>
 </launch>
