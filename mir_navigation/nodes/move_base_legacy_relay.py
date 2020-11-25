@@ -24,7 +24,7 @@ calls (note that some parameters have changed names; see http://wiki.ros.org/mov
 """
 
 # keep configured base local and global planners to send to MBF
-bgp = "GlobalPlanner"
+bgp = "RelaxedAStar"
 blp = "dwa"
 
 
